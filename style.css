@@ -69,7 +69,7 @@ section {
   max-width: 1840px;
   width: 100%;
   margin: 0 auto;
-  padding: 150px 40px;
+  padding: 150px 0;
 }
 
 img {
@@ -259,5 +259,16 @@ header .side-nav {
   white-space: nowrap;
 }
 /* ---------- marquee end ---------- */
+
+/* ---------- fashion-img start ---------- */
+.fashion-img-box {
+  background-color: #000;
+}
+
+.fashion-img-box .con {
+  padding: 0;
+}
+
+/* ---------- fashion-img end ---------- */
 
 /* ---------- custom end ---------- */
