@@ -79,10 +79,12 @@ img {
 .title-box > .title {
   font-family: "Didot LT Std Headline", serif;
   font-size: 100px;
+  text-transform: uppercase;
 }
 
 .title-box > .sub {
   font-size: 16px;
+  text-transform: uppercase;
 }
 /* ---------- custom start ---------- */
 
@@ -210,7 +212,37 @@ header .side-nav {
   font-size: 16px;
   font-weight: 400;
 }
-
 /* ---------- fashion-trends end ---------- */
+
+/* ---------- today-item start ---------- */
+.today-item-box > .con {
+  padding: 200px 40px 100px 40px;
+}
+
+.today-item-box .title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.today-item-box .title-box .sub {
+  margin-bottom: 45px;
+}
+
+.today-item-box .main-box {
+  display: flex;
+  gap: 10px;
+  height: 618px;
+  overflow: hidden;
+}
+
+.today-item-box .main-box .left {
+  width: 610px;
+}
+
+.today-item-box .main-box .right {
+  flex: 1;
+}
+/* ---------- today-item end ---------- */
 
 /* ---------- custom end ---------- */
