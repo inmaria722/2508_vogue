@@ -1,0 +1,126 @@
+/* ---------- font start ---------- */
+html > body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+@font-face {
+  font-family: "Signatura Monoline Script";
+  src: url("/fonts/SignaturaMonoline-Regular.woff2") format("woff2"),
+    url("/fonts/SignaturaMonoline-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- font end ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 1920px;
+}
+
+.con {
+  max-width: 1840px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+/* ---------- custom start ---------- */
+
+/* ---------- header start ---------- */
+header {
+  width: 1920px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+}
+
+header > .con {
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+
+header .menu-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+header .side-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+/* ---------- header end ---------- */
+
+/* ---------- banner start ---------- */
+.banner {
+  color: #fff;
+  position: relative;
+}
+
+.banner > .bg-img {
+  width: 100%;
+  height: 2400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner .text-box {
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+}
+
+.banner .text-box-1 {
+  top: 955px;
+}
+
+.banner .text-box-2 {
+  top: 1295px;
+}
+
+.banner .heads-up {
+  top: 1470px;
+}
+
+.banner .text-box-3 {
+  left: auto;
+  right: 40px;
+  top: 2005px;
+}
+
+.banner .text-box-4 {
+  left: 851px;
+  top: 1450px;
+}
+
+.banner .text-box-5 {
+  top: 1754px;
+  left: auto;
+  right: 40px;
+}
+/* ---------- banner end ---------- */
+
+/* ---------- custom end ---------- */
