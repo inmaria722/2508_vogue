@@ -28,12 +28,20 @@ section {
   max-width: 1840px;
   width: 100%;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 150px 40px;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+.title-box > .title {
+  font-size: 120px;
+}
+
+.title-box > .sub {
+  font-size: 16px;
 }
 /* ---------- custom start ---------- */
 
@@ -122,5 +130,46 @@ header .side-nav {
   right: 40px;
 }
 /* ---------- banner end ---------- */
+
+/* ---------- fashion-trends start ---------- */
+.fashion-trends-box .main-box {
+  margin-top: 150px;
+  display: flex;
+  gap: 10px;
+}
+
+.fashion-trends-box .main-box .left,
+.fashion-trends-box .main-box .right {
+  width: 50%;
+}
+
+.fashion-trends-box .main-box .desc-box {
+  padding-right: 100px;
+  height: 547px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fashion-trends-box .main-box .desc-box > .desc {
+  width: 217px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.fashion-trends-box .main-box .year-box {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.fashion-trends-box .main-box .year-box > .year {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ---------- fashion-trends end ---------- */
 
 /* ---------- custom end ---------- */
