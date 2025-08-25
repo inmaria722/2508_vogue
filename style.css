@@ -268,7 +268,90 @@ header .side-nav {
 .fashion-img-box .con {
   padding: 0;
 }
-
 /* ---------- fashion-img end ---------- */
+
+/* ---------- fashion-slides start ---------- */
+.fashion-slides-box {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.fashion-slides-box .con {
+  max-width: none;
+}
+
+.fashion-slides-box .title-box {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.fashion-slides-box .title-box .title {
+  font-size: 24px;
+}
+
+/* 컨테이너는 기존대로 */
+.fashion-slides-box .swiper {
+  width: 916px;
+  height: 100%;
+  overflow: visible;
+}
+
+/* 각 슬라이드의 '논리적' 너비를 고정 (JS에서 auto를 쓰므로 이 값이 적용됨) */
+.fashion-slides-box .swiper-slide {
+  width: 916px; /* ← 핵심 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  /* 축소/확대는 래퍼(슬라이드)에만 적용 */
+  transition: transform 0.35s ease, opacity 0.35s ease;
+  transform: scale(0.88); /* 기본 축소 */
+  opacity: 0.75;
+  transform-origin: center center;
+}
+
+/* 이미지 비율 유지 */
+.fashion-slides-box .swiper-slide img {
+  display: block;
+  width: 100%; /* ← 슬라이드 폭에 맞춰 비율 유지 */
+  height: auto; /* ← 고정 높이 제거 */
+  aspect-ratio: 916 / 570; /* 선택: 레이아웃 안정화 */
+  object-fit: cover; /* 필요 시 crop */
+}
+
+/* 양 옆 슬라이드(선택적 미세 조정) */
+.fashion-slides-box .swiper-slide-prev,
+.fashion-slides-box .swiper-slide-next {
+  transform: scale(0.93);
+  opacity: 0.9;
+}
+
+/* 가운데 슬라이드만 원래 크기 */
+.fashion-slides-box .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* 내비게이션 위치는 기존 값에서 필요시 조정 */
+.fashion-slides-box .swiper-button-next,
+.fashion-slides-box .swiper-button-prev {
+  color: #dfdfdf;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+}
+.fashion-slides-box .swiper-button-next {
+  right: -30%;
+}
+.fashion-slides-box .swiper-button-prev {
+  left: -30%;
+}
+
+/* ---------- fashion-slides end ---------- */
 
 /* ---------- custom end ---------- */
