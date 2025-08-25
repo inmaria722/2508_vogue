@@ -5,10 +5,50 @@ html > body {
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
+/* Regular (Roman) */
 @font-face {
-  font-family: "Signatura Monoline Script";
-  src: url("/fonts/SignaturaMonoline-Regular.woff2") format("woff2"),
-    url("/fonts/SignaturaMonoline-Regular.woff") format("woff");
+  font-family: "Didot LT Std";
+  src: url("./transfonter.org-20250825-151240/DidotLTStd-Roman.woff2")
+      format("woff2"),
+    url("./transfonter.org-20250825-151240/DidotLTStd-Roman.woff")
+      format("woff"),
+    url("./fonts/DidotLTStd-Roman.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Didot LT Std";
+  src: url("./transfonter.org-20250825-151240/DidotLTStd-Bold.woff2")
+      format("woff2"),
+    url("./transfonter.org-20250825-151240/DidotLTStd-Bold.woff") format("woff"),
+    url("./fonts/DidotLTStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Didot LT Std";
+  src: url("./fonts/DidotLTStd-Italic.woff2") format("woff2"),
+    url("./fonts/DidotLTStd-Italic.woff") format("woff"),
+    url("./fonts/DidotLTStd-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Headline */
+@font-face {
+  font-family: "Didot LT Std Headline";
+  src: url("./transfonter.org-20250825-151240/DidotLTStd-Headline.woff2")
+      format("woff2"),
+    url("./transfonter.org-20250825-151240/DidotLTStd-Headline.woff")
+      format("woff"),
+    url("./fonts/DidotLTStd-Headline.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -37,7 +77,8 @@ img {
 }
 
 .title-box > .title {
-  font-size: 120px;
+  font-family: "Didot LT Std Headline", serif;
+  font-size: 100px;
 }
 
 .title-box > .sub {
