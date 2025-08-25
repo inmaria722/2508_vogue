@@ -58,6 +58,7 @@ html > body {
 
 * {
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 section {
@@ -79,12 +80,10 @@ img {
 .title-box > .title {
   font-family: "Didot LT Std Headline", serif;
   font-size: 100px;
-  text-transform: uppercase;
 }
 
 .title-box > .sub {
   font-size: 16px;
-  text-transform: uppercase;
 }
 /* ---------- custom start ---------- */
 
@@ -244,5 +243,21 @@ header .side-nav {
   flex: 1;
 }
 /* ---------- today-item end ---------- */
+
+/* ---------- marquee start ---------- */
+.marquee-box {
+  height: 500px;
+  background-color: #000;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.marquee-box .marquee-text {
+  font-size: 350px;
+  font-family: "Didot LT Std";
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* ---------- marquee end ---------- */
 
 /* ---------- custom end ---------- */
