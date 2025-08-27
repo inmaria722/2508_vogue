@@ -1,18 +1,81 @@
 /* ---------- font start ---------- */
-html > body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Ultra\ Light.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Regular (Roman) */
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Thin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Roman.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Heavy.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Black.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url("./helvetica-neue/Helvetica\ Neue\ Italic.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
 @font-face {
   font-family: "Didot LT Std";
   src: url("./transfonter.org-20250825-151240/DidotLTStd-Roman.woff2")
-      format("woff2"),
-    url("./transfonter.org-20250825-151240/DidotLTStd-Roman.woff")
-      format("woff"),
-    url("./fonts/DidotLTStd-Roman.otf") format("opentype");
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,9 +85,7 @@ html > body {
 @font-face {
   font-family: "Didot LT Std";
   src: url("./transfonter.org-20250825-151240/DidotLTStd-Bold.woff2")
-      format("woff2"),
-    url("./transfonter.org-20250825-151240/DidotLTStd-Bold.woff") format("woff"),
-    url("./fonts/DidotLTStd-Bold.otf") format("opentype");
+    format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -33,9 +94,7 @@ html > body {
 /* Italic */
 @font-face {
   font-family: "Didot LT Std";
-  src: url("./fonts/DidotLTStd-Italic.woff2") format("woff2"),
-    url("./fonts/DidotLTStd-Italic.woff") format("woff"),
-    url("./fonts/DidotLTStd-Italic.otf") format("opentype");
+  src: url("./fonts/DidotLTStd-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -45,13 +104,14 @@ html > body {
 @font-face {
   font-family: "Didot LT Std Headline";
   src: url("./transfonter.org-20250825-151240/DidotLTStd-Headline.woff2")
-      format("woff2"),
-    url("./transfonter.org-20250825-151240/DidotLTStd-Headline.woff")
-      format("woff"),
-    url("./fonts/DidotLTStd-Headline.otf") format("opentype");
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+html > body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* ---------- font end ---------- */
@@ -401,7 +461,6 @@ header .side-nav {
 
 /* ---------- interview start ---------- */
 .interview-box .box {
-  border: 1px solid red;
   display: flex;
   height: 550px;
   gap: 10px;
@@ -411,8 +470,8 @@ header .side-nav {
   margin-bottom: 10px;
 }
 
-.interview-box .box-1 .left,
-.interview-box .box-1 .right {
+.interview-box .left,
+.interview-box .right {
   width: 50%;
 }
 
@@ -422,7 +481,7 @@ header .side-nav {
   justify-content: flex-start;
 }
 
-.interview-box .box-1 .title {
+.interview-box .box-1 .left .title {
   font-family: "Didot LT Std Headline", serif;
   font-size: 50px;
 }
@@ -432,8 +491,7 @@ header .side-nav {
   justify-content: flex-start;
 }
 
-.interview-box .box-1 .right .img-box,
-.interview-box .box-2 .left .img-box {
+.interview-box .img-box {
   width: 453px;
   height: 550px;
   overflow: hidden;
@@ -443,8 +501,69 @@ header .side-nav {
   margin-bottom: 200px;
 }
 
+.interview-box .box-2 .right {
+  display: flex;
+  gap: 10px;
+}
+
+.interview-box .box-2 > .right > .text-box,
+.interview-box .box-2 > .right > .img-box {
+  width: 50%;
+}
+
+.interview-box .box-2 > .right > .text-box {
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
 .interview-box .box-3 {
   padding: 50px 0;
+  height: fit-content;
+}
+
+.interview-box .box-3 .pf-text-box {
+  width: 761px;
+  padding-right: 150px;
+}
+
+.interview-box .box-3 span {
+  display: block;
+}
+
+.interview-box .box-3 .about-me {
+  display: flex;
+  gap: 5px;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 15px 0 20px 0;
+}
+
+.interview-box .box-3 .pf-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #4d4d4d;
+}
+
+.interview-box .box-3 .me {
+  font-family: "Didot LT Std Headline", serif;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.interview-box .box-3 .article-info {
+  display: flex;
+  gap: 8px;
+  padding: 15px 0;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.interview-box .box-3 .img-box {
+  flex: 1;
+  height: 680px;
 }
 /* ---------- interview end ---------- */
 
