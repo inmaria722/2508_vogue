@@ -121,15 +121,33 @@ html > body {
   text-transform: uppercase;
 }
 
+svg {
+  display: block;
+  width: 100%;
+}
+
 section {
   width: 1920px;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  section {
+    width: 1024px;
+    padding: 0 24px;
+  }
 }
 
 .con {
-  max-width: 1840px;
   width: 100%;
   margin: 0 auto;
   padding: 150px 0;
+}
+
+@media (max-width: 1024px) {
+  .con {
+    padding: 100px 0;
+  }
 }
 
 img {
@@ -160,6 +178,14 @@ header {
   visibility: visible;
   opacity: 1;
   z-index: 9999;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 1024px;
+    padding: 0 24px;
+  }
 }
 
 header > .con {
@@ -173,6 +199,10 @@ header .menu-box {
   gap: 30px;
   align-items: center;
   justify-content: center;
+}
+
+header .flex-grow-1 {
+  flex-grow: 1;
 }
 
 header .side-nav {
@@ -192,7 +222,6 @@ header .side-nav {
 
 .banner > .bg-img {
   width: 100%;
-  height: 2400px;
   position: absolute;
   top: 0;
   left: 0;
@@ -231,6 +260,37 @@ header .side-nav {
   top: 1754px;
   left: auto;
   right: 40px;
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 1280px;
+  }
+
+  .banner .text-box {
+    transform: scale(0.6);
+    left: -24px;
+  }
+
+  .banner .text-box-1 {
+    top: 564px;
+  }
+
+  .banner .text-box-2 {
+    left: -44px;
+    top: 750px;
+  }
+
+  .banner .heads-up {
+    left: 0;
+    top: 870px;
+  }
+
+  .banner .text-box-3 {
+    top: 1050px;
+    left: 615px;
+    transform: scale(1);
+  }
 }
 /* ---------- banner end ---------- */
 
@@ -630,6 +690,14 @@ footer {
   width: 1920px;
   background-color: #1a1a1a;
   color: #fff;
+  padding: 0 30px;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    width: 1024px;
+    padding: 0 24px;
+  }
 }
 
 footer .con {
