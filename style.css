@@ -565,7 +565,61 @@ header .side-nav {
   width: 1069px;
   height: 681px;
 }
-
 /* ---------- interview end ---------- */
+
+/* ---------- living start ---------- */
+.living-box {
+  background-color: #fafafa;
+}
+
+.living-box .box-1 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.living-box .box-1 .year-box {
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.living-box .box-1 .title-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.living-box .box-1 .title-box .title {
+  font-family: "Didot LT Std";
+  font-size: 150px;
+}
+
+.living-box .box-1 .desc-box {
+  margin: 80px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.living-box .box-1 .desc-box .desc {
+  width: 832px;
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.living-box .box-2 {
+  display: flex;
+  gap: 10px;
+  height: fit-content;
+  margin-bottom: 200px;
+}
+
+.living-box .box-2 li {
+  list-style: none;
+  width: 33.33333%;
+  height: 750px;
+  overflow: hidden;
+}
+/* ---------- living end ---------- */
 
 /* ---------- custom end ---------- */
