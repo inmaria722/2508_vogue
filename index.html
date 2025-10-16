@@ -13,8 +13,329 @@
 
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <div class="con">
+        <ul class="menu-box">
+          <li class="menu-box-item"><a href="#">FASHION</a></li>
+          <li class="menu-box-item"><a href="#">BEAUTY</a></li>
+          <li class="menu-box-item"><a href="#">LIVING</a></li>
+          <li class="menu-box-item"><a href="#">CULTURE</a></li>
+        </ul>
+        <div class="flex-grow-1"></div>
+        <ul class="side-nav">
+          <li class="menu-box-item lang"><a href="#">BRAND</a></li>
+          <li class="menu-box-item"><a href="#">SUBSCRIBE</a></li>
+          <div class="side-menu-box">
+            <div class="side-menu-btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 4.38867H21"
+                  stroke="#1A1A1A"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M2 11.7773H21"
+                  stroke="#1A1A1A"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M2 19.166H21"
+                  stroke="#1A1A1A"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <section class="fashion-trends-box">
+      <div class="con">
+        <div class="title-box">
+          <div class="title">
+            <span>FASHION TRENDS</span>
+          </div>
+          <div class="sub">
+            <span>READ TRENDS, CREATE TRENDS</span>
+          </div>
+        </div>
+        <div class="main-box">
+          <div class="left">
+            <div class="desc-box">
+              <div class="desc">
+                보그는 글로벌 네트워크를 활용하는 것은 물론 발 빠른 취재를 통해
+                패션 트렌드의 최전선을 보여줍니다. 전문적 식견이 담긴 깊이 있는
+                콘텐츠와 함께 읽기 쉽고 실용적인 콘텐츠까지 유행과 스타일에 관한
+                다양한 스펙트럼의 콘텐츠를 제공합니다.
+              </div>
+            </div>
+            <div class="year-box">
+              <span class="year">2025</span>
+            </div>
+          </div>
+          <div class="right">
+            <img src="../imgs/fashion-trends.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="today-item-box">
+      <div class="con">
+        <div class="title-box">
+          <div class="title">
+            <span>Today’s item</span>
+          </div>
+          <div class="sub">
+            <span>hot item</span>
+          </div>
+        </div>
+        <div class="main-box">
+          <a href="#" class="img-box left">
+            <img src="../imgs/today-item_left.jpg" alt="" />
+          </a>
+          <a href="#" class="img-box right">
+            <img src="../imgs/today-item_right.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="marquee-box">
+      <div class="marquee-text">fashion fashion</div>
+    </section>
+    <section class="fashion-img-box">
+      <div class="con">
+        <div class="fashion-img">
+          <img src="../imgs/fashion-img.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="fashion-slides-box">
+      <div class="con">
+        <div class="title-box">
+          <div class="title">
+            <span>our fashions</span>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../imgs/fathion-photos-1.jpg" alt="" />
+              <span>fashion photo</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/fashion-news-1.webp" alt="" />
+              <span>fashion news</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/fashion-item-5.jpg" alt="" />
+              <span>fashion item</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/jewerly-3.jpg" alt="" />
+              <span>watch & jewerly</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/celebrity-1.webp" alt="" />
+              <span>Celebrity style</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/fashion-trend-4.png" alt="" />
+              <span>fashion trends</span>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section class="beauty-box">
+      <div class="con">
+        <div class="title-box">
+          <div class="title">
+            <span>beauty</span>
+          </div>
+          <div class="sub">
+            <span>beauty is an attitude</span>
+          </div>
+        </div>
+        <div class="main-box">
+          <div class="left">
+            <div class="img-box-wrap">
+              <div class="img-box">
+                <img src="../imgs/beauty.jpg" alt="" />
+              </div>
+            </div>
+            <div class="desc-box">
+              <span
+                >글로벌 뷰티 트렌드를 선도하는 통찰력.<br />보그 코리아는 전
+                세계 뷰티 시장의 흐름을 빠르게<br />포착하고, 전문적인 분석과
+                감각적인 큐레이션으로<br />스킨케어부터 메이크업, 향수까지<br />지금
+                가장 주목해야 할 아름다움을 전합니다.</span
+              >
+            </div>
+          </div>
+          <div class="right">
+            <div class="img-box">
+              <img src="../imgs/beauty-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="interview-box">
+      <div class="con">
+        <div class="box box-1">
+          <div class="left">
+            <div class="title">
+              <span>interview</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="img-box">
+              <img src="../imgs/interview-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="box box-2">
+          <div class="left">
+            <div class="img-box">
+              <img src="../imgs/interview-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="text-box">
+              <span>‘뉴 우먼’은 자신감이에요</span>
+            </div>
+            <div class="img-box">
+              <img src="../imgs/interview-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="box box-3">
+          <div class="text-box">
+            <div class="about-box">
+              <span>ABOUT</span>
+              <span>(me)</span>
+            </div>
+            <span class="desc">
+              “사람마다 행복을 채우는 방법은 다르겠죠. 저는 ‘소확행’
+              스타일이어서 행복의 작은 일부만 발견해도 ‘우아!’ 하고 기뻐해요.”
+              토요일 저녁, 성수동의 스튜디오에서 촬영 중인 리사의 오늘 자
+              행복은? “루이 비통 앰배서더로 발탁된 후 처음 찍는 화보 촬영이<보그
+              코리아>라서 좋아요. 고양이들과 인사하는 순간도, 소금빵을 먹어서도
+              행복해요. 작은 것들에 감사해요. ”지난 8월15일, 싱글 ‘New Woman’을
+              발표하고 분 단위로 움직이는 스케줄에도, 리사는 매일이 행복할 수
+              있는 사람이다.
+            </span>
+            <div class="info-box">
+              <span class="date"> 2024.09.18 </span>
+              <span> | </span>
+              <span class="writer"> by 손은영, 김나랑 </span>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="../imgs/interview-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="living-box">
+      <div class="con">
+        <div class="box box-1">
+          <div class="year-box">
+            <span>2025</span>
+          </div>
+          <div class="title-box">
+            <span>(Felipe Oliveira Baptista)</span>
+            <span class="title">LIVING</span>
+          </div>
+          <div class="desc-box">
+            <span class="desc">
+              펠리페 올리베이라 밥티스타(Felipe Oliveira Baptista)의 3층 규모
+              아파트에서는 파리 힙스터들 사이에서 각광받는 생조르주 지역 일대가
+              한눈에 내려다보인다. 탁 트인 거실에는 세 층 높이를 가뿐히 뛰어넘어
+              천장까지 이어지는 프랑스식 창문이 시원하게 나 있는데 그 전망의
+              아름다움은 말로 설명하기 어려울 정도다. 실크처럼 얇은 오스트리아산
+              커튼과 천진난만한 줄무늬로 칠한 벽난로, 군데군데 놓인 파릇파릇한
+              스킨답서스, 마리오 벨리니(Mario Bellini)의 갈색
+              ‘카말레온다(Camaleonda)’ 소파가 안착한 공간에 빛이 스며들기
+              시작하자 밥티스타의 살롱은 영화 속 한 장면 같은 그윽한 분위기를
+              발산했다. 그 광경을 잠시 넋 놓고 감상하다가 이윽고 광장에 모인
+              사람들을 구경하며 느긋한 오후를 보내기 딱 좋아 보이는 아담한
+              테라스로 나가보고 싶은 마음이 굴뚝같았다.
+            </span>
+          </div>
+        </div>
+        <div class="box box-2">
+          <li>
+            <a href="#" class="img-box">
+              <img src="../imgs/living-1.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="img-box">
+              <img src="../imgs/living-2.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="img-box">
+              <img src="../imgs/living-3.png" alt="" />
+            </a>
+          </li>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="con">
+        <span class="title"> More than just magazine </span>
+        <div class="info-box">
+          <span>정기구독</span>
+          <span>|</span>
+          <span>회사소개</span>
+          <span>|</span>
+          <span>광고/제휴</span>
+          <span>|</span>
+          <span>개인정보 처리방침</span>
+          <span>|</span>
+          <span>공지사항</span>
+        </div>
+        <div class="doosan">
+          <span>VOGUE.CO.KR IS OPERATED BY</span>
+          <span>DOOSAN MAGAZINE</span>
+        </div>
+      </div>
+    </footer>
+
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
   </body>

@@ -246,18 +246,20 @@ header .side-nav {
 }
 
 .fashion-trends-box .main-box .desc-box {
-  padding-right: 100px;
+  padding-right: 144px;
   height: 547px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: #4d4d4d;
 }
 
 .fashion-trends-box .main-box .desc-box > .desc {
-  width: 217px;
+  width: 308px;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  text-align: justify;
 }
 
 .fashion-trends-box .main-box .year-box {
@@ -274,8 +276,8 @@ header .side-nav {
 /* ---------- fashion-trends end ---------- */
 
 /* ---------- today-item start ---------- */
-.today-item-box > .con {
-  padding: 200px 40px 100px 40px;
+.today-item-box .con {
+  padding: 200px 0 100px 0;
 }
 
 .today-item-box .title-box {
@@ -624,6 +626,7 @@ header .side-nav {
 
 /* ---------- footer start ---------- */
 footer {
+  width: 1920px;
   background-color: #1a1a1a;
   color: #fff;
 }
