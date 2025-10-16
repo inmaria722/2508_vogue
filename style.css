@@ -400,8 +400,11 @@ header .side-nav {
 /* ---------- beauty end ---------- */
 
 /* ---------- interview start ---------- */
+.interview-box .con {
+  padding: 100px 0 150px 0;
+}
+
 .interview-box .box {
-  border: 1px solid red;
   display: flex;
   height: 550px;
   gap: 10px;
@@ -433,7 +436,7 @@ header .side-nav {
 }
 
 .interview-box .box-1 .right .img-box,
-.interview-box .box-2 .left .img-box {
+.interview-box .box-2 .img-box {
   width: 453px;
   height: 550px;
   overflow: hidden;
@@ -443,9 +446,66 @@ header .side-nav {
   margin-bottom: 200px;
 }
 
+.interview-box .box-2 .left,
+.interview-box .box-2 .right {
+  width: 50%;
+}
+
+.interview-box .box-2 .right .text-box {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.interview-box .box-2 .right {
+  display: flex;
+  gap: 10px;
+}
+
 .interview-box .box-3 {
   padding: 50px 0;
+  height: fit-content;
 }
+
+.interview-box .box-3 .text-box {
+  width: 761px;
+  padding-right: 308px;
+}
+
+.interview-box .box-3 .text-box .about-box {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.interview-box .box-3 .text-box .about-box span:last-child {
+  font-family: "Didot LT Std";
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.interview-box .box-3 .text-box .desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #4d4d4d;
+}
+
+.interview-box .box-3 .text-box .info-box {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #b3b3b3;
+  display: flex;
+  gap: 10px;
+}
+
+.interview-box .box-3 .img-box {
+  width: 1069px;
+  height: 681px;
+}
+
 /* ---------- interview end ---------- */
 
 /* ---------- custom end ---------- */
