@@ -123,7 +123,6 @@ html > body {
 
 svg {
   display: block;
-  width: 100%;
 }
 
 section {
@@ -214,10 +213,15 @@ header .side-nav {
 /* ---------- header end ---------- */
 
 /* ---------- banner start ---------- */
+
 .banner {
   color: #fff;
   height: 2400px;
   position: relative;
+}
+
+.banner svg {
+  width: 100%;
 }
 
 .banner > .bg-img {
@@ -230,36 +234,42 @@ header .side-nav {
 .banner .text-box {
   position: absolute;
   z-index: 1;
-  left: 40px;
 }
 
 .banner .text-box-1 {
   top: 955px;
+  left: 30px;
 }
 
 .banner .text-box-2 {
-  top: 1295px;
+  top: 1205px;
+  left: 50px;
 }
 
 .banner .heads-up {
-  top: 1470px;
+  top: 1350px;
+  left: 0px;
 }
 
 .banner .text-box-3 {
   left: auto;
-  right: 40px;
+  right: 200px;
   top: 2005px;
+  transform: scale(2);
 }
 
 .banner .text-box-4 {
-  left: 851px;
-  top: 1450px;
+  left: auto;
+  right: 500px;
+  top: 1400px;
+  transform: scale(3.5);
 }
 
 .banner .text-box-5 {
-  top: 1754px;
+  top: 1734px;
   left: auto;
-  right: 40px;
+  right: 100px;
+  transform: scale(1.4);
 }
 
 @media (max-width: 1024px) {
@@ -269,27 +279,42 @@ header .side-nav {
 
   .banner .text-box {
     transform: scale(0.6);
-    left: -24px;
   }
 
   .banner .text-box-1 {
     top: 564px;
+    left: -40px;
   }
 
   .banner .text-box-2 {
-    left: -44px;
-    top: 750px;
+    top: 740px;
+    left: -30px;
   }
 
   .banner .heads-up {
-    left: 0;
-    top: 870px;
+    top: 850px;
+    left: -60px;
   }
 
   .banner .text-box-3 {
-    top: 1050px;
-    left: 615px;
-    transform: scale(1);
+    left: auto;
+    right: 55px;
+    top: 1005px;
+    transform: scale(1.2);
+  }
+
+  .banner .text-box-4 {
+    left: auto;
+    right: 180px;
+    top: 670px;
+    transform: scale(1.8);
+  }
+
+  .banner .text-box-5 {
+    top: 904px;
+    left: auto;
+    right: -20px;
+    transform: scale(0.7);
   }
 }
 /* ---------- banner end ---------- */
