@@ -622,4 +622,35 @@ header .side-nav {
 }
 /* ---------- living end ---------- */
 
+/* ---------- footer start ---------- */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+footer .con {
+  padding: 100px 0;
+}
+
+footer .con .title {
+  font-family: "Didot LT Std";
+  font-size: 50px;
+}
+
+footer .con .info-box {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+footer .con .doosan {
+  color: #e6e6e6;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.7;
+}
+/* ---------- footer end ---------- */
+
 /* ---------- custom end ---------- */
