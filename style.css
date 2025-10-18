@@ -179,33 +179,7 @@ header {
   opacity: 1;
   z-index: 9999;
   padding: 0 40px;
-}
-
-.h-mb {
-  opacity: 0;
-  visibility: hidden;
-}
-
-@media (max-width: 420px) {
-  .h-pc {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .h-mb {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .h-mb .top {
-    display: flex;
-    justify-content: space-between;
-    padding: 14px 16px;
-  }
-
-  header {
-    padding: 0;
-  }
+  cursor: pointer;
 }
 
 header > .con {
@@ -231,6 +205,52 @@ header .side-nav {
   align-items: center;
   justify-content: center;
 }
+
+/* h-mb */
+
+.h-mb {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.h-mb .bottom {
+  padding-left: 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.h-mb .bottom .mb-menu-box {
+  display: flex;
+  gap: 30px;
+}
+
+.h-mb .bottom .mb-menu-box a {
+  display: block;
+  padding: 10px 0;
+}
+
+@media (max-width: 420px) {
+  .h-pc {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .h-mb {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .h-mb .top {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+  }
+
+  header {
+    padding: 0;
+  }
+}
+
 /* ---------- header end ---------- */
 
 /* ---------- banner start ---------- */
