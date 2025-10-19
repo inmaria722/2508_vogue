@@ -128,11 +128,24 @@ svg {
 }
 
 section {
+  max-width: 1920px;
   width: 100vw;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  section {
+    padding: 0 16px;
+  }
 }
 
 .con {
-  max-width: 1840px;
   width: 100%;
   margin: 0 auto;
   padding: 150px 0;
@@ -140,14 +153,12 @@ section {
 
 @media (max-width: 1024px) {
   .con {
-    max-width: 1872px;
     padding: 100px 0;
   }
 }
 
 @media (max-width: 420px) {
   .con {
-    max-width: 1888px;
     padding: 50px 0;
   }
 }
@@ -162,8 +173,21 @@ img {
   font-size: 100px;
 }
 
+@media (max-width: 1024px) {
+  .title-box > .title {
+    font-size: 50px;
+  }
+}
+
 .title-box > .sub {
   font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .title-box > .sub {
+    font-size: 14px;
+    opacity: 0.3;
+  }
 }
 /* ---------- custom start ---------- */
 
@@ -175,7 +199,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   background-color: transparent;
   visibility: visible;
@@ -268,19 +292,11 @@ header .side-nav {
 
 .banner {
   color: #fff;
-  height: 2400px;
-  position: relative;
+  padding: 0;
 }
 
 .banner svg {
   width: 100%;
-}
-
-.banner > .bg-img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .banner .text-box {
@@ -325,6 +341,10 @@ header .side-nav {
 }
 
 @media (max-width: 1024px) {
+  .banner {
+    height: 1280px;
+  }
+
   .banner .text-box {
     transform: scale(0.6);
   }
@@ -367,6 +387,10 @@ header .side-nav {
 }
 
 @media (max-width: 420px) {
+  .banner {
+    height: 525px;
+  }
+
   .banner .text-box {
     transform: scale(0.3);
   }
@@ -448,6 +472,27 @@ header .side-nav {
 .fashion-trends-box .main-box .year-box > .year {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .fashion-trends-box .main-box {
+    flex-direction: column-reverse;
+  }
+
+  .fashion-trends-box .main-box .right,
+  .fashion-trends-box .main-box .left {
+    width: 100%;
+  }
+
+  .fashion-trends-box .main-box .desc-box {
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 50px 0 80px 0;
+  }
+
+  .fashion-trends-box .main-box .desc-box > .desc {
+    width: 360px;
+  }
 }
 /* ---------- fashion-trends end ---------- */
 
