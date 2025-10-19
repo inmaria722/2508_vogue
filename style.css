@@ -112,6 +112,8 @@
 
 html > body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 1920px;
+  width: 100%;
 }
 
 /* ---------- font end ---------- */
@@ -126,18 +128,11 @@ svg {
 }
 
 section {
-  width: 1920px;
-  padding: 0 40px;
-}
-
-@media (max-width: 1024px) {
-  section {
-    width: 1024px;
-    padding: 0 24px;
-  }
+  width: 100vw;
 }
 
 .con {
+  max-width: 1840px;
   width: 100%;
   margin: 0 auto;
   padding: 150px 0;
@@ -145,7 +140,15 @@ section {
 
 @media (max-width: 1024px) {
   .con {
+    max-width: 1872px;
     padding: 100px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .con {
+    max-width: 1888px;
+    padding: 50px 0;
   }
 }
 
@@ -236,14 +239,22 @@ header .side-nav {
   }
 
   .h-mb {
+    height: fit-content;
     opacity: 1;
     visibility: visible;
+    position: static;
   }
 
   .h-mb .top {
     display: flex;
     justify-content: space-between;
     padding: 14px 16px;
+    background-color: #fff;
+  }
+
+  .h-mb .bottom {
+    background-color: #fff;
+    overflow: scroll;
   }
 
   header {
@@ -314,10 +325,6 @@ header .side-nav {
 }
 
 @media (max-width: 1024px) {
-  .banner {
-    height: 1280px;
-  }
-
   .banner .text-box {
     transform: scale(0.6);
   }
@@ -356,6 +363,48 @@ header .side-nav {
     left: auto;
     right: -20px;
     transform: scale(0.7);
+  }
+}
+
+@media (max-width: 420px) {
+  .banner .text-box {
+    transform: scale(0.3);
+  }
+
+  .banner .text-box-1 {
+    top: 150px;
+    left: -95px;
+  }
+
+  .banner .text-box-2 {
+    top: 250px;
+    left: -90px;
+  }
+
+  .banner .heads-up {
+    top: 335px;
+    left: -105px;
+  }
+
+  .banner .text-box-3 {
+    left: auto;
+    right: -60px;
+    top: 360px;
+    transform: scale(0.5);
+  }
+
+  .banner .text-box-4 {
+    left: auto;
+    right: -13px;
+    top: 150px;
+    transform: scale(0.7);
+  }
+
+  .banner .text-box-5 {
+    top: 316px;
+    left: auto;
+    right: -90px;
+    transform: scale(0.3);
   }
 }
 /* ---------- banner end ---------- */
@@ -753,7 +802,8 @@ header .side-nav {
 
 /* ---------- footer start ---------- */
 footer {
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   background-color: #1a1a1a;
   color: #fff;
   padding: 0 30px;
@@ -761,8 +811,13 @@ footer {
 
 @media (max-width: 1024px) {
   footer {
-    width: 1024px;
     padding: 0 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    padding: 0 16px;
   }
 }
 
