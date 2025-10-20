@@ -207,6 +207,7 @@ header {
   z-index: 9999;
   padding: 0 40px;
   cursor: pointer;
+  background-color: #fff;
 }
 
 header > .con {
@@ -933,15 +934,46 @@ header .side-nav {
 .living-box .box-2 {
   display: flex;
   gap: 10px;
-  height: fit-content;
-  margin-bottom: 200px;
+  height: 750px;
+  overflow: hidden;
 }
 
 .living-box .box-2 li {
   list-style: none;
   width: 33.33333%;
-  height: 750px;
-  overflow: hidden;
+}
+
+.living-box .box-2 li img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .living-box .box-1 {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .living-box .box-1 .year-box {
+    margin-bottom: 20px;
+  }
+
+  .living-box .box-1 .title-box {
+    margin: 0;
+  }
+
+  .living-box .box-1 .title-box .title {
+    font-size: 50px;
+  }
+
+  .living-box .box-1 .desc-box {
+    display: none;
+  }
+
+  .living-box .box-2 {
+    margin-bottom: 0;
+    height: 412px;
+  }
 }
 /* ---------- living end ---------- */
 
