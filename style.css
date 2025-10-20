@@ -556,6 +556,16 @@ header .side-nav {
   font-weight: bold;
   white-space: nowrap;
 }
+
+@media (max-width: 1024px) {
+  .marquee-box {
+    height: 300px;
+  }
+
+  .marquee-box .marquee-text {
+    font-size: 150px;
+  }
+}
 /* ---------- marquee end ---------- */
 
 /* ---------- fashion-img start ---------- */
@@ -596,7 +606,7 @@ header .side-nav {
 }
 
 .fashion-slides-box .swiper-slide {
-  width: 916px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -643,6 +653,26 @@ header .side-nav {
 }
 .fashion-slides-box .swiper-button-prev {
   left: -13%;
+}
+
+.fashion-slides-box .swiper span {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+  .fashion-slides-box .swiper {
+    width: 648px;
+  }
+
+  .fashion-slides-box .title-box .title {
+    font-size: 20px;
+  }
+
+  .fashion-slides-box .swiper span {
+    font-size: 13px;
+  }
 }
 /* ---------- fashion-slides end ---------- */
 
