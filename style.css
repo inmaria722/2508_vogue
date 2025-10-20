@@ -110,6 +110,10 @@
   font-display: swap;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html > body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   max-width: 1920px;
