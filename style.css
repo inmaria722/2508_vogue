@@ -986,18 +986,6 @@ footer {
   padding: 0 30px;
 }
 
-@media (max-width: 1024px) {
-  footer {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 420px) {
-  footer {
-    padding: 0 16px;
-  }
-}
-
 footer .con {
   padding: 100px 0;
 }
@@ -1020,6 +1008,22 @@ footer .con .doosan {
   font-weight: 400;
   font-size: 12px;
   opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 0 24px;
+  }
+
+  footer .con .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    padding: 0 16px;
+  }
 }
 /* ---------- footer end ---------- */
 
