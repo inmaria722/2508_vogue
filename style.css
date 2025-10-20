@@ -706,7 +706,7 @@ header .side-nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 141px;
+  padding-left: 154px;
 }
 
 .beauty-box .main-box .left .desc {
@@ -714,6 +714,7 @@ header .side-nav {
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
+  text-align: justify;
 }
 
 .beauty-box .main-box .right .img-box {
@@ -724,6 +725,24 @@ header .side-nav {
   height: 100%;
   object-fit: cover;
   object-position: left top;
+}
+
+@media (max-width: 1024px) {
+  .beauty-box .main-box .left .img-box-wrap {
+    margin-bottom: 100px;
+  }
+
+  .beauty-box .main-box .left .desc-box {
+    padding: 0;
+  }
+
+  .beauty-box .main-box .left .img-box {
+    width: 236px;
+  }
+
+  .beauty-box .main-box .right .img-box {
+    height: 350px;
+  }
 }
 /* ---------- beauty end ---------- */
 
