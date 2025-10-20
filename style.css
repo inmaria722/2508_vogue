@@ -791,6 +791,7 @@ header .side-nav {
 
 .interview-box .box-2 {
   margin-bottom: 200px;
+  height: fit-content;
 }
 
 .interview-box .box-2 .left,
@@ -818,6 +819,7 @@ header .side-nav {
 .interview-box .box-3 .text-box {
   width: 761px;
   padding-right: 308px;
+  text-align: justify;
 }
 
 .interview-box .box-3 .text-box .about-box {
@@ -851,6 +853,40 @@ header .side-nav {
 .interview-box .box-3 .img-box {
   width: 1069px;
   height: 681px;
+}
+
+@media (max-width: 1024px) {
+  .interview-box .box-1 {
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+
+  .interview-box .box-1 .right,
+  .interview-box .box-2 .right {
+    display: none;
+  }
+
+  .interview-box .box-2 {
+    margin-bottom: 0;
+  }
+
+  .interview-box .box-2 .left {
+    width: 100%;
+  }
+
+  .interview-box .box-2 .img-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .interview-box .box-3 .text-box {
+    width: 483px;
+    padding: 0;
+  }
+
+  .interview-box .box-3 .img-box {
+    display: none;
+  }
 }
 /* ---------- interview end ---------- */
 
