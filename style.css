@@ -805,6 +805,20 @@ header .side-nav {
     height: 350px;
   }
 }
+
+@media (max-width: 420px) {
+  .beauty-box .title-box {
+    margin-bottom: 30px;
+  }
+
+  .beauty-box .main-box .left {
+    display: none;
+  }
+
+  .beauty-box .main-box .right {
+    width: 100%;
+  }
+}
 /* ---------- beauty end ---------- */
 
 /* ---------- interview start ---------- */
@@ -949,6 +963,33 @@ header .side-nav {
     display: none;
   }
 }
+
+@media (max-width: 420px) {
+  .interview-box .con {
+    padding: 50px 0;
+  }
+
+  .interview-box .box-1 .left .title {
+    font-size: 32px;
+  }
+
+  .interview-box .box-3 .text-box .about-box {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .interview-box .box-3 .text-box .desc {
+    font-size: 12px;
+  }
+
+  .interview-box .box-3 .text-box .info-box {
+    font-size: 10px;
+  }
+
+  .interview-box .box-3 {
+    padding: 50px 0 0 0;
+  }
+}
 /* ---------- interview end ---------- */
 
 /* ---------- living start ---------- */
@@ -1035,6 +1076,28 @@ header .side-nav {
     height: 412px;
   }
 }
+
+@media (max-width: 420px) {
+  .living-box .box-1 {
+    font-size: 10px;
+  }
+
+  .living-box .box-1 .title-box .title {
+    font-size: 32px;
+  }
+
+  .living-box .box-2 {
+    height: 235px;
+  }
+
+  .living-box .box-2 li:last-child {
+    display: none;
+  }
+
+  .living-box .box-2 li {
+    width: 50%;
+  }
+}
 /* ---------- living end ---------- */
 
 /* ---------- footer start ---------- */
@@ -1061,6 +1124,11 @@ footer .con .info-box {
   margin: 30px 0;
   font-weight: 400;
   font-size: 16px;
+  opacity: 0.7;
+}
+
+footer .con .info-box .devide {
+  opacity: 0.5;
 }
 
 footer .con .doosan {
@@ -1083,6 +1151,28 @@ footer .con .doosan {
 @media (max-width: 420px) {
   footer {
     padding: 0 16px;
+  }
+
+  footer .con {
+    padding: 50px 0;
+  }
+
+  footer .con .title {
+    font-size: 22px;
+  }
+
+  footer .con .info-box {
+    flex-direction: column;
+    font-size: 12px;
+    gap: 20px;
+  }
+
+  footer .con .info-box .devide {
+    display: none;
+  }
+
+  footer .con .doosan {
+    font-size: 12px;
   }
 }
 /* ---------- footer end ---------- */
