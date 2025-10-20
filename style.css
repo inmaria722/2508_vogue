@@ -535,6 +535,7 @@ header .side-nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 30px;
 }
 
 .today-item-box .title-box .sub {
@@ -568,6 +569,12 @@ header .side-nav {
 
   .today-item-box .main-box .left {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .today-item-box .con {
+    padding: 50px 0;
   }
 }
 /* ---------- today-item end ---------- */
