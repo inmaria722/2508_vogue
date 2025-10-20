@@ -508,7 +508,7 @@ header .side-nav {
 }
 
 .today-item-box .title-box .sub {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .today-item-box .main-box {
@@ -524,6 +524,21 @@ header .side-nav {
 
 .today-item-box .main-box .right {
   flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .today-item-box .con {
+    padding: 100px 0;
+  }
+
+  .today-item-box .main-box {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .today-item-box .main-box .left {
+    width: 100%;
+  }
 }
 /* ---------- today-item end ---------- */
 
