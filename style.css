@@ -179,6 +179,12 @@ img {
   }
 }
 
+@media (max-width: 420px) {
+  .title-box > .title {
+    font-size: 32px;
+  }
+}
+
 .title-box > .sub {
   font-size: 16px;
 }
@@ -186,6 +192,13 @@ img {
 @media (max-width: 1024px) {
   .title-box > .sub {
     font-size: 14px;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 420px) {
+  .title-box > .sub {
+    font-size: 12px;
     opacity: 0.3;
   }
 }
@@ -199,7 +212,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   background-color: transparent;
   visibility: visible;
@@ -239,6 +252,8 @@ header .side-nav {
 .h-mb {
   opacity: 0;
   visibility: hidden;
+  max-width: 420px;
+  width: 100%;
 }
 
 .h-mb .bottom {
@@ -257,6 +272,12 @@ header .side-nav {
   padding: 10px 0;
 }
 
+@media (max-width: 1024px) {
+  header {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 420px) {
   .h-pc {
     opacity: 0;
@@ -267,7 +288,6 @@ header .side-nav {
     height: fit-content;
     opacity: 1;
     visibility: visible;
-    position: static;
   }
 
   .h-mb .top {
@@ -279,7 +299,6 @@ header .side-nav {
 
   .h-mb .bottom {
     background-color: #fff;
-    overflow: scroll;
   }
 
   header {
@@ -342,10 +361,6 @@ header .side-nav {
 }
 
 @media (max-width: 1024px) {
-  .banner {
-    height: 1280px;
-  }
-
   .banner .text-box {
     transform: scale(0.6);
   }
@@ -388,10 +403,6 @@ header .side-nav {
 }
 
 @media (max-width: 420px) {
-  .banner {
-    height: 525px;
-  }
-
   .banner .text-box {
     transform: scale(0.3);
   }
@@ -435,8 +446,11 @@ header .side-nav {
 /* ---------- banner end ---------- */
 
 /* ---------- fashion-trends start ---------- */
+.fashion-trends-box .title-box {
+  margin-bottom: 150px;
+}
+
 .fashion-trends-box .main-box {
-  margin-top: 150px;
   display: flex;
   gap: 10px;
 }
@@ -493,6 +507,21 @@ header .side-nav {
 
   .fashion-trends-box .main-box .desc-box > .desc {
     width: 360px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fashion-trends-box .title-box {
+    margin-bottom: 50px;
+  }
+
+  .fashion-trends-box .main-box .desc-box > .desc {
+    font-size: 12px;
+    width: 289px;
+  }
+
+  .fashion-trends-box .main-box .year-box > .year {
+    font-size: 10px;
   }
 }
 /* ---------- fashion-trends end ---------- */
@@ -567,6 +596,16 @@ header .side-nav {
     font-size: 150px;
   }
 }
+
+@media (max-width: 420px) {
+  .marquee-box {
+    height: 200px;
+  }
+
+  .marquee-box .marquee-text {
+    font-size: 100px;
+  }
+}
 /* ---------- marquee end ---------- */
 
 /* ---------- fashion-img start ---------- */
@@ -576,6 +615,12 @@ header .side-nav {
 
 .fashion-img-box .con {
   padding: 0;
+}
+
+@media (max-width: 420px) {
+  .fashion-img-box {
+    display: none;
+  }
 }
 /* ---------- fashion-img end ---------- */
 
@@ -602,7 +647,7 @@ header .side-nav {
 
 .fashion-slides-box .swiper {
   width: 916px;
-  height: 100%;
+  height: fit-content;
   overflow: visible;
 }
 
@@ -669,6 +714,21 @@ header .side-nav {
 
   .fashion-slides-box .title-box .title {
     font-size: 20px;
+  }
+
+  .fashion-slides-box .swiper span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  .fashion-slides-box .swiper {
+    width: 388px;
+    margin-bottom: 30px;
+  }
+
+  .fashion-slides-box .title-box {
+    display: none;
   }
 
   .fashion-slides-box .swiper span {
