@@ -217,17 +217,22 @@ header {
   top: 0;
   left: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   background-color: transparent;
   visibility: visible;
   opacity: 1;
   z-index: 9999;
   padding: 0 40px;
-  cursor: pointer;
   background-color: #fff;
+  color: #1a1a1a;
 }
 
-header > .con {
+header a:hover {
+  color: #b3b3b3;
+  transition: all 0.2s ease;
+}
+
+header .con {
   padding: 0;
   display: flex;
   height: 100%;
@@ -249,6 +254,12 @@ header .side-nav {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+header .side-nav .side-menu-box:hover path {
+  stroke: #b3b3b3;
+  transition: all 0.2s ease;
 }
 
 /* h-mb */
@@ -315,6 +326,7 @@ header .side-nav {
 /* ---------- banner start ---------- */
 
 .banner {
+  margin-top: 70px;
   color: #fff;
   padding: 0;
 }
