@@ -18,6 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// fade up
 $(".title").each(function () {
   var commonParent = $(this).closest(".con");
 
@@ -29,7 +30,7 @@ $(".title").each(function () {
     scrollTrigger: {
       trigger: currentTitle,
       start: "top 80%",
-      toggleActions: "play none restart none",
+      toggleActions: "play none none none",
     },
   });
 

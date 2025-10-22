@@ -122,6 +122,7 @@ html > body {
 
 /* ---------- font end ---------- */
 
+/* 공통 속성 */
 * {
   box-sizing: border-box;
   text-transform: uppercase;
@@ -172,6 +173,19 @@ img {
   width: 100%;
 }
 
+.con .img-box {
+  overflow: hidden;
+}
+
+.con .img-box img {
+  transition: all 0.5s ease;
+}
+
+.con .img-box:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
 .title-box > .title {
   font-family: "Didot LT Std Headline", serif;
   font-size: 100px;
@@ -206,6 +220,64 @@ img {
     font-size: 12px;
     opacity: 0.3;
   }
+}
+
+/* article-desc-box */
+.con .img-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #1a1a1a;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.con .img-box:hover::after {
+  visibility: visible;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.article-desc-box {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.article-desc-box .subject {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.article-desc-box .article-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.article-desc-box .article-info {
+  font-size: 12px;
+  font-weight: 400;
+  color: #cccccc;
+  display: flex;
+  gap: 8px;
+}
+
+.con .img-box:hover .article-desc-box {
+  visibility: visible;
+  opacity: 1;
+  gap: 5px;
 }
 /* ---------- custom start ---------- */
 
@@ -506,6 +578,9 @@ header .side-nav .side-menu-box:hover path {
   font-weight: 400;
 }
 
+.fashion-trends-box .main-box .right {
+  height: fit-content;
+}
 @media (max-width: 1024px) {
   .fashion-trends-box .main-box {
     flex-direction: column-reverse;
@@ -573,7 +648,6 @@ header .side-nav .side-menu-box:hover path {
 .today-item-box .main-box .right {
   flex: 1;
 }
-
 @media (max-width: 1024px) {
   .today-item-box .con {
     padding: 100px 0;
