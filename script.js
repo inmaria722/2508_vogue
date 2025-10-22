@@ -19,9 +19,11 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 $(".title").each(function () {
-  var currentTitle = $(this)[0];
+  var commonParent = $(this).closest(".con");
 
-  var currentSubs = $(this).nextAll(".sub").toArray();
+  var currentTitle = $(this)[0];
+  var currentSubs = commonParent.find(".sub").toArray();
+  var currentImgBoxes = commonParent.find(".img-box").toArray();
 
   var tl = gsap.timeline({
     scrollTrigger: {
@@ -33,32 +35,23 @@ $(".title").each(function () {
 
   tl.fromTo(
     currentTitle,
-    {
-      opacity: 0,
-      y: 50,
-    },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 0.6,
-      ease: "power1.inout",
-    }
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, duration: 0.6, ease: "power1.inout" }
   );
 
   if (currentSubs.length > 0) {
     tl.fromTo(
       currentSubs,
-      {
-        opacity: 0,
-        y: 30,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        ease: "power1.inout",
-        stagger: 0.1,
-      }
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.5, ease: "power1.inout", stagger: 0.1 }
+    );
+  }
+
+  if (currentImgBoxes.length > 0) {
+    tl.fromTo(
+      currentImgBoxes,
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.5, ease: "power1.inout", stagger: 0.1 }
     );
   }
 });
