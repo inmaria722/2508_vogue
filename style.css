@@ -171,6 +171,8 @@ section {
 img {
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .con .img-box {
@@ -854,11 +856,12 @@ header .side-nav .side-menu-box:hover path {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .beauty-box .main-box .left .img-box {
   width: 400px;
+  height: 450px;
 }
 
 .beauty-box .main-box .left .desc-box {
@@ -884,6 +887,10 @@ header .side-nav .side-menu-box:hover path {
   height: 100%;
   object-fit: cover;
   object-position: left top;
+}
+
+.beauty-box .main-box .right .article-desc-box {
+  top: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -930,13 +937,13 @@ header .side-nav .side-menu-box:hover path {
   gap: 10px;
 }
 
-.interview-box .box-1 {
-  margin-bottom: 10px;
-}
-
 .interview-box .left,
 .interview-box .right {
   width: 50%;
+}
+
+.interview-box .box-1 {
+  margin-bottom: 10px;
 }
 
 .interview-box .box-1 .left {
@@ -955,6 +962,25 @@ header .side-nav .side-menu-box:hover path {
   justify-content: flex-start;
 }
 
+.interview-box .arrow-ico {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  transform: scale(1.1);
+  z-index: 1;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.interview-box .box-1 .right .arrow-ico {
+  right: 18px;
+}
+
+.interview-box .box-1 .img-box:hover .arrow-ico {
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
 .interview-box .box-1 .right .img-box,
 .interview-box .box-2 .img-box {
   width: 453px;
@@ -971,6 +997,28 @@ header .side-nav .side-menu-box:hover path {
 .interview-box .box-2 .right {
   width: 50%;
 }
+
+.interview-box .box-2 .right .arrow-ico {
+  left: 10px;
+  bottom: 15px;
+}
+
+.interview-box .box-2 .img-box:hover .arrow-ico {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+/* .interview-box .box-2 .left .img-box {
+  transition: transform 0.6s ease;
+}
+
+.interview-box .box-2 .left .img-box:hover {
+  transform: rotateY(180deg) !important;
+}
+
+.interview-box .box-2 .left .img-box:hover .article-desc-box {
+  transform: rotateY(180deg);
+  right: 20px;
+} */
 
 .interview-box .box-2 .right .text-box {
   width: 50%;
