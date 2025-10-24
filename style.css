@@ -673,14 +673,15 @@ header .side-nav .side-menu-box:hover path {
 /* ---------- today-item end ---------- */
 
 /* ---------- marquee start ---------- */
-.marquee-box {
+.marquee-wrapper {
   height: 500px;
   background-color: #000;
   color: #fff;
   padding-top: 80px;
+  overflow: hidden;
 }
 
-.marquee-box .marquee-text {
+.marquee-wrapper .marquee-track {
   font-size: 350px;
   font-family: "Didot LT Std";
   font-weight: bold;
