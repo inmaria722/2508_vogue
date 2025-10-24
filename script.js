@@ -1,5 +1,14 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const lenis = new Lenis();
+lenis.on("scroll", ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
+
 // swiper
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 120,
@@ -20,42 +29,26 @@ var swiper = new Swiper(".mySwiper", {
 
 // fade up
 $(document).ready(function () {
-  $(".title").each(function () {
-    var commonParent = $(this).closest(".con");
+  gsap.registerPlugin(ScrollTrigger);
 
-    var currentTitle = $(this)[0];
-    var currentSubs = commonParent.find(".sub").toArray();
-    var currentImgBoxes = commonParent.find(".img-box").toArray();
+  $(".title-box > .title, .title-box > .sub, .img-box").each(function () {
+    var currentElement = this;
+    var $el = $(currentElement);
 
-    var tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: currentTitle,
-        start: "top 80%",
-        toggleActions: "play none none none",
+    ScrollTrigger.create({
+      trigger: currentElement,
+      start: "top 80%",
+      once: true,
+      onEnter: function () {
+        $el.addClass("is-visible");
+
+        if ($el.hasClass("img-box")) {
+          setTimeout(function () {
+            $el.addClass("is-hoverable");
+          }, 1000);
+        }
       },
     });
-
-    tl.fromTo(
-      currentTitle,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 0.5, ease: "power1.inout" }
-    );
-
-    if (currentSubs.length > 0) {
-      tl.fromTo(
-        currentSubs,
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.5, ease: "power1.inout", stagger: 0.1 }
-      );
-    }
-
-    if (currentImgBoxes.length > 0) {
-      tl.fromTo(
-        currentImgBoxes,
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.5, ease: "power1.inout", stagger: 0.1 }
-      );
-    }
   });
 });
 

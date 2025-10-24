@@ -168,26 +168,54 @@ section {
   }
 }
 
-img {
+/* img-box */
+.img-box {
+  overflow: hidden;
+  position: relative;
+  pointer-events: none;
+  transition: pointer-events 0s linear;
+}
+
+.img-box.is-hoverable {
+  pointer-events: auto;
+}
+
+.img-box img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  clip-path: inset(100% 0 0 0);
+  transition: transform 0.5s ease, clip-path 0.6s ease-out 0.4s;
 }
 
-.con .img-box {
-  overflow: hidden;
+.img-box.is-visible img {
+  clip-path: inset(0 0 0 0);
 }
 
-.con .img-box img {
-  transition: all 0.5s ease;
-}
-
-.con .img-box:hover img {
+.img-box:hover img {
   transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
+.img-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #1a1a1a;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.img-box:hover::after {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+/* title-box */
 .title-box > .title {
   font-family: "Didot LT Std Headline", serif;
   font-size: 100px;
@@ -224,26 +252,24 @@ img {
   }
 }
 
-/* article-desc-box */
-.con .img-box::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #1a1a1a;
-  visibility: hidden;
+.title-box > .title,
+.title-box > .sub {
   opacity: 0;
-  transition: all 0.3s ease;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
 }
 
-.con .img-box:hover::after {
-  visibility: visible;
-  opacity: 0.5;
-  transition: all 0.3s ease;
+.title-box > .sub {
+  transition-delay: 0.2s;
 }
 
+.title.is-visible,
+.sub.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* article-desc-box */
 .article-desc-box {
   position: absolute;
   left: 20px;
@@ -650,6 +676,16 @@ header .side-nav .side-menu-box:hover path {
 .today-item-box .main-box .right {
   flex: 1;
 }
+
+.today-item-box .main-box .img-box img {
+  clip-path: inset(0 100% 0 0);
+  transition: transform 0.5s ease, clip-path 0.8s ease-out 0.6s;
+}
+
+.today-item-box .main-box .img-box.is-visible img {
+  clip-path: inset(0 0 0 0);
+}
+
 @media (max-width: 1024px) {
   .today-item-box .con {
     padding: 100px 0;
@@ -943,6 +979,7 @@ header .side-nav .side-menu-box:hover path {
   width: 50%;
 }
 
+/* box-1 */
 .interview-box .box-1 {
   margin-bottom: 10px;
 }
@@ -989,6 +1026,7 @@ header .side-nav .side-menu-box:hover path {
   overflow: hidden;
 }
 
+/* box-2 */
 .interview-box .box-2 {
   margin-bottom: 200px;
   height: fit-content;
@@ -1008,18 +1046,6 @@ header .side-nav .side-menu-box:hover path {
   transform: rotate(90deg);
   opacity: 1;
 }
-/* .interview-box .box-2 .left .img-box {
-  transition: transform 0.6s ease;
-}
-
-.interview-box .box-2 .left .img-box:hover {
-  transform: rotateY(180deg) !important;
-}
-
-.interview-box .box-2 .left .img-box:hover .article-desc-box {
-  transform: rotateY(180deg);
-  right: 20px;
-} */
 
 .interview-box .box-2 .right .text-box {
   width: 50%;
@@ -1033,6 +1059,7 @@ header .side-nav .side-menu-box:hover path {
   gap: 10px;
 }
 
+/* box-3 */
 .interview-box .box-3 {
   padding: 50px 0;
   height: fit-content;
@@ -1075,6 +1102,15 @@ header .side-nav .side-menu-box:hover path {
 .interview-box .box-3 .img-box {
   width: 1069px;
   height: 681px;
+}
+
+.interview-box .box-3 .img-box img {
+  clip-path: inset(0 0 0 100%);
+  transition: transform 0.5s ease, clip-path 0.8s ease-out 0.6s;
+}
+
+.interview-box .box-3 .img-box.is-visible img {
+  clip-path: inset(0 0 0 0);
 }
 
 @media (max-width: 1024px) {
@@ -1194,6 +1230,30 @@ header .side-nav .side-menu-box:hover path {
 .living-box .box-2 li img {
   height: 100%;
   object-fit: cover;
+}
+
+.living-box .box-2 li.img-box:nth-child(1) img {
+  transition: transform 0.5s ease, clip-path 0.8s ease-out 0.6s;
+}
+
+.living-box .box-2 li.img-box:nth-child(2) img {
+  transition: transform 0.5s ease, clip-path 0.8s ease-out 0.8s;
+}
+
+.living-box .box-2 li.img-box:nth-child(3) img {
+  transition: transform 0.5s ease, clip-path 0.8s ease-out 1s;
+}
+
+.living-box .box-2 li.img-box:nth-child(1).is-hoverable {
+  transition-delay: 0s;
+}
+
+.living-box .box-2 li.img-box:nth-child(2).is-hoverable {
+  transition-delay: 0.2s;
+}
+
+.living-box .box-2 li.img-box:nth-child(3).is-hoverable {
+  transition-delay: 0.4s;
 }
 
 @media (max-width: 1024px) {
