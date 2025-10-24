@@ -1270,7 +1270,15 @@ footer .con .info-box {
   margin: 30px 0;
   font-weight: 400;
   font-size: 16px;
+}
+
+footer .con .info-box a {
   opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+footer .con .info-box a:hover {
+  opacity: 1;
 }
 
 footer .con .info-box .devide {
@@ -1282,6 +1290,10 @@ footer .con .doosan {
   font-weight: 400;
   font-size: 12px;
   opacity: 0.7;
+}
+
+footer .con .doosan a {
+  text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
