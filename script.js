@@ -10,6 +10,7 @@ $(document).ready(function () {
 gsap.registerPlugin(ScrollTrigger);
 
 $(window).on("load", function () {
+  // swiper 라이브러리
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 120,
     centeredSlides: true,
@@ -27,6 +28,7 @@ $(window).on("load", function () {
     },
   });
 
+  // marquee
   var $track = $(".marquee-track");
   var $items = $track.children();
   $items.clone().appendTo($track);
@@ -63,6 +65,7 @@ $(window).on("load", function () {
     ".title-box > .title, .title-box > .sub, .img-box"
   );
 
+  // 호버와 등장 충돌 방지
   ScrollTrigger.batch(elementsToAnimate, {
     start: "top 80%",
     once: true,
